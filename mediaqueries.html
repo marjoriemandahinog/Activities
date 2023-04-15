@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(59, 224, 125);
+        }
+         /* MEDIA QUERIES */
+/* SMARTPHONES */
+@media (min-width: 320px) and (max-width: 480px){ 
+.header {background-color:red;}
+}
+/* TABLETS */
+@media (min-width: 577px) and (max-width: 992px){
+.header {background-color:blue;}
+}
+/* LAPTOPS */
+@media (min-width: 993px){ 
+.header {background-color:orange;}
+}
+        .navbar {
+            display: flex;
+            background-color: black;
+        }
+
+        .navbar a{
+            color:white;
+            padding: 20px;
+            text-align:center;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            font-weight: bold;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            width: 31.5%;
+            background-color: white;
+            padding: 10px;
+            border-style: double;
+            border-color:rgb(59, 224, 125);
+        }
+
+        p {
+            font-size: medium;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1>Online Magazine</h1>
+    </section>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main class="categories">
+    <div class="section">
+         <h4>Lifestyle</h4>
+         <p> Possimus deserunt vero reiciendis nihil numquam iste doloremque voluptate eum sequi mollitia dignissimos saepe beatae, amet optio laboriosam maiores delectus expedita totam?</p>
+    </div>
+    <div class="section">
+        <h4>Business</h4>
+        <p> Voluptatum eveniet, ipsa laboriosam facilis modi, sunt quod assumenda dignissimos minus fugit natus! Praesentium minus iure debitis quaerat facilis necessitatibus minima tempore!</p>
+    </div>
+    <div class="section">
+        <h4>Sports</h4>
+        <p> Repudiandae non quam impedit incidunt facere id magnam dolore modi nam laudantium in molestias doloribus eaque neque, quo eius. Molestiae, ipsa voluptatum.</p>
+    </div>
+    </main>
+    
+</body>
+</html>
+
+
+  
