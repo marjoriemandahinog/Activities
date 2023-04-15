@@ -1,125 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FLEXBOX</title>
     <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-            font-size: x-large;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 100px;
-            margin-right: 600px;
-          }
-          
-          header {
-            background-color:teal;
-            text-align: center;
-            padding:20px;
-            border-radius: 5px;
-          }
-          
-          main {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            flex-wrap: wrap;
-          }
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+      }
 
-          .left {
-            background-color: orange;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding:50px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-          }
-          
-          .square {
-            background-color:rgb(99, 99, 17);
-            display: flex;
-            align-self:flex-start;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-          }
+      header {
+        font-size: xx-large;
+        background-color: green;
+        text-align: center;
+        padding: 30px;
+        border-radius: 5px;
+      }
 
-          .right {
-            display: flex;
-            flex-wrap: wrap;
-            background-color:darkorchid;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            margin-left: 10px;
-            padding-left:5px;
-            padding-right: 5px;
-            padding-top: 55px;
-          }
-          
-          footer {
-            background-color: teal;
-            text-align: center;
-            padding:20px;
-            border-radius: 5px;
-          }
+      main {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .left {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200805/pngtree-background-with-the-theme-of-cyber-technology-networking-illustration-image_386385.jpg");
+        background-size: cover;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 50px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .square {
+        background-color: whitesmoke;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .square:hover {
+        background-color: aqua;
+      }
+
+      img {
+        width:200px;
+        height: 150px;
+      }
+
+      img:hover {
+        width: 250px;
+        height: 200px;
+      }
+
+      .right {
+        background-color: black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        text-align: center;
+
+        animation-name: color-change;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes color-change {
+        0% {color: rgb(90, 165, 250);}
+        50% {color: red;}
+        100% {color: rgb(222, 65, 188);}
+      }
+
+      footer {
+        background-color: green;
+        text-align: center;
+        font-size: small;
+        padding: 20px;
+        border-radius: 5px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- HEADER SECTION -->
-    <header>HEADER</header>
+    <header>10 FAMOUS PEOPLE IN THE HISTORY OF TECHNOLOGY</header>
     <!-- MAIN SECTION -->
-        <main class="main">
-            <!-- LEFT SIDE -->
-          <section class="left">
-            <section>MAIN</section>
-            <div class="square">
-              <p>Item 1</p>
-            </div>
-            <div class="square">
-              <p>Item 2</p>
-            </div>
-            <div class="square">
-              <p>Item 3</p>
-            </div>
-            <div class="square">
-              <p>Item 4</p>
-            </div>
-            <div class="square">
-              <p>Item 5</p>
-            </div>
-            <div class="square">
-              <p>Item 6</p>
-            </div>
-            <div class="square">
-              <p>Item 7</p>
-            </div>
-            <div class="square">
-              <p>Item 8</p>
-            </div>
-            <div class="square">
-              <p>Item 9</p>
-            </div>
-            <div class="square">
-              <p>Item 10</p>
-            </div>
-            <div class="square">
-              <p>Item 11</p>
-            </div>
-          </section>
-          <!-- LEFT SIDE -->
-          <section class="right">SIDEBAR</section>
-        </main>
+    <main class="main">
+      <!-- LEFT SIDE -->
+      <section class="left">
+        <div class="square">
+          <p>Charles <br> Babbage</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Charles_Babbage_-_1860.jpg/800px-Charles_Babbage_-_1860.jpg">
+        </div>
+        <div class="square">
+          <p>Ada <br> Lovelace</p>
+          <img src="https://blogs.sap.com/wp-content/uploads/2010/02/ada_lovelace_63830.jpg">
+        </div>
+        <div class="square">
+          <p>Alan <br> Turing</p>
+          <img scr="https://static01.nyt.com/images/2019/06/10/obituaries/10overlooked-alanturing-1/f86fc26c86b444c391fb412bb3dcec76-superJumbo.jpg">
+        </div>
+        <div class="square">
+          <p>John von <br> Neumann</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/HD.3F.191_%2811239892036%29.jpg">
+        </div>
+        <div class="square">
+          <p>Ada <br> Yonath</p>
+          <img src="https://www.nobelprize.org/images/yonath-15150-portrait-medium.jpg">
+        </div>
+        <div class="square">
+          <p>Grace <br> Hopper</p>
+          <img src="https://minasyenergia.upm.es/images/Espacio_Igualdad/Exposicion_mujeres_ciencias/gracehopp.jpg">
+        </div>
+        <div class="square">
+          <p>Douglas <br> Engelbart</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Douglas_Engelbart_in_2008.jpg">
+        </div>
+        <div class="square">
+          <p>Dennis <br> Ritchie</p>
+          <img src="https://spectrum.ieee.org/media-library/image.jpg?id=25565829&width=980">
+        </div>
+        <div class="square">
+          <p>Bill <br> Gates</p>
+          <img src="https://pbs.twimg.com/profile_images/1564398871996174336/M-hffw5a_400x400.jpg">
+        </div>
+        <div class="square">
+          <p>Tim  <br> Berners-Lee</p>
+          <img src="https://entrepreneurship.mit.edu/wp-content/uploads/Tim-Berners-Lee-640-1.jpg">
+        </div>
+      </section>
+      <!-- RIGHT SIDE -->
+      <section class="right">
+        <p>FLASH SALE!🛒<br />50% off <br />
+          <button>SHOP NOW>></button>
+        </p>
+      </section>
+    </main>
     <!-- FOOTER SECTION -->
-    <footer>FOOTER</footer>
-    
-</body>
+    <footer>
+      <p>sources: https://chat.openai.com/ <br>https://en.wikipedia.org/wiki/</p>
+    </footer>
+  </body>
 </html>
